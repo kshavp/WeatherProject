@@ -69,6 +69,12 @@
         text-align: center;
     }
 
+    .img-icon{
+        filter: drop-shadow(3px 2px 7px rgb(251, 253, 144));
+        background-color: antiquewhite;
+        border-radius: 50% 50%;
+    }
+
 </style>
 
 <body>
@@ -84,7 +90,7 @@
         </form>
     </div>
     <div class="info">
-        <img src="<%=imgURL%>" alt="">
+        <img class="img-icon" src="<%=imgURL%>" alt="">
         <h2><%=weatherString%></h2>
         <h3><%=descString%></h3>
     </div>

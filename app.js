@@ -1,6 +1,7 @@
 const express = require('express');
 const https = require('https');
 const bodyParser = require('body-parser');
+
 const app = express();
 const PORT = 5000;
 const API_KEY = "1830039cb0f5378be094cd3c5573730f";
@@ -17,6 +18,7 @@ let imgURL="";
 app.get("/",(req,res)=>{
     res.render("weather",{weatherString, descString, imgURL});    
 });
+
 
 app.post("/",(req,res)=>{
     city = req.body.cityInp;
